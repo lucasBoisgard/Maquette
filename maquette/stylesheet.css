@@ -1,3 +1,17 @@
+@font-face {
+	font-family: "Droid_Sans";
+	src: url("Polices/Droid_Sans.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Droid_Serif";
+	src: url("Polices/Droid_Serif.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Oswald";
+	src: url("Polices/Oswald.woff2") format("woff2");
+}
+
 body {
 	margin: 0 0 0 0;
 }
@@ -17,11 +31,10 @@ body {
 	padding-bottom: 8px;
 	padding-right: 30%;
 	padding-left: 5%;
-
 }
 
 .nav_block {
-	display: inline-block;
+    float: left;
 }
 
 .logo {
@@ -31,9 +44,9 @@ body {
 	font-family: "Oswald";
 
 }
-.nav_block li {
+.nav .nav_block {
 	font-size: 71%;
-	font-family: "Droid Sans";
+	font-family: "Droid_Sans";
 	padding-bottom: 5px;
 	margin-top: auto;
 }
@@ -48,7 +61,7 @@ body {
 }
 
 header {
-	background-image: url("./maquette_2/misc/grille.png");
+	background-image: url("misc/grille.png");
 }
 
 .hotels {
@@ -76,16 +89,17 @@ header {
 	padding: 30px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	border-top: solid 1px rgba(220, 220, 200, 0.4);
-	border-bottom: solid 1px rgba(220, 220, 200, 0.4);
+	border-top: solid 1.5px rgba(220, 220, 200, 0.3);
+	border-bottom: solid 1.5px rgba(220, 220, 200, 0.3);
 }
 
 .middle {
-		background-image: url("./maquette_2/misc/grille.png");
-		height: 100px;
-		width: 100%;
-		display: table;
+	background-image: url("misc/grille.png");
+	height: 90px;
+	width: 100%;
+	display: table;
 }
+
 
 .middle p {
 	text-align: center;
@@ -101,25 +115,150 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+	border-top: solid 1.5px rgba(220, 220, 200, 0.3);
+	border-bottom: solid 1.5px rgba(220, 220, 200, 0.3);
+	margin: 10px 0 10px 0;
+	padding: 30px;
 }
 
  .articleContent {
  	display: inline-block;
- 	padding-right: 3	%; 
-  	width: 250px;
+ 	padding-right: 1%; 
+  	width: 300px;
+ 	margin-right: 10px;
 }
 
- .articleContent p {
- 	font-family: "Droid Sans";
- 	font-size: ;
+.date {
+	font-style: italic;
+	font-size: 60%;
+	font-family: "Droid_Serif";
+ 	color: rgba(190 ,190, 190, 10);
+ 	font-weight: 600;
+}
+
+ .article_txt {
+ 	font-family: "Droid_Sans";
+ 	color: grey;
+ 	font-weight: 200;
+	font-size: 80%;
 }
 
 #Commentaires {
-	width: 15%;
+	width: 450px;
+	padding-right: 0;
+	order: 99;
 }
 
 .articleContent h3{
 	color: #D2691E;
 	font-family: Oswald;
 	font-weight: normal;
+}
+
+#golf {
+	border: solid 1.5px red;
+	margin: 15px;
+	padding: 0 15px 0 10px;
+	width: 200px;
+	border: solid 1.5px rgba(220, 220, 200, 0.3);
+}
+
+.more {
+	font-style: italic;
+	font-size: 80%;
+ 	color: rgba(190 ,190, 190, 10);
+ 	font-weight: 600;
+ 	font-family: "Droid_Serif";
+}
+
+.picture_accro img{
+	padding: 4px;
+	margin: 3px;
+	border: solid 1.5px rgba(220, 220, 200, 0.3);
+}
+
+#accro {
+	width: 220px;
+}
+
+section ul {
+	list-style: none;
+	display: inline-flex;
+}
+.foot_block img {
+	vertical-align: top;
+}
+
+.foot_block p {
+	font-size: 80%;
+	margin: 0;
+	padding: 0;
+}
+
+.foot{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("misc/grille.png");
+	color: grey;
+}
+
+.foot_block {
+	width: 210px;
+	margin: 0 20px 0 20px;
+	font-family: "Droid_Sans"; 
+}
+
+.foot_block h3 {
+	font-family: "Oswald";
+	color: rgba(180, 180, 180, 0.8);
+}
+
+.opacity {
+	opacity: 0;
+    height: 23px;
+}
+
+.mail {
+	text-decoration: underline;
+}
+
+.foot_block .date {
+	margin: 10px 0 10px 0;
+}
+
+.foot_block .little_title {
+	font-size: 85%;
+	font-weight: 600;
+	margin: 10px 0 10px 0;
+}
+
+.foot_block .com {
+	text-decoration: underline;
+	margin: 10px 0 10px 0;
+}
+
+footer {
+	border-top: solid 1.5px rgba(220, 220, 200, 0.3);
+	margin-top: 10px; 
+
+}
+
+.bottom {
+	display: flex; 
+	justify-content: space-between;
+	width: 930px;
+	margin: 15px auto 20px auto;
+	align-items: center;
+	color: grey;
+	font-family: "Droid_Sans";
+	font-size: 70%;
+}
+
+.footer_left .txt {
+	color: rgba(150, 150, 150, 5);
+}
+
+.footer_right {
+	display: block;
 }
